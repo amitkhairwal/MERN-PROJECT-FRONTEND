@@ -1,0 +1,109 @@
+/* cart.css */
+
+/* Container */
+.cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+   background-color: rgb(212, 208, 208);
+
+  }
+  
+  /* Main Content */
+  .cart main {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  /* Cart Items */
+  .cart main h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Aside */
+  .cart aside {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  /* Price Details */
+  .cart aside p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Coupon Code Input */
+  .cart aside input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Coupon Code Message */
+  .cart aside span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Coupon Code Success */
+  .cart aside .green {
+    color: green;
+  }
+  
+  /* Coupon Code Error */
+  .cart aside .red {
+    color: red;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart aside .red svg {
+    margin-left: 5px;
+  }
+  
+  /* Checkout Button */
+  .cart aside a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart aside a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Layout */
+  @media screen and (max-width: 768px) {
+    /* Flex direction column for smaller screens */
+    .cart {
+      flex-direction: column;
+    }
+  
+    /* Reset margin-right for main content */
+    .cart main {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    /* Reset max-width for aside */
+    .cart aside {
+      max-width: none;
+    }
+  
+    /* Adjust input and button width for smaller screens */
+    .cart aside input[type="text"] {
+      width: calc(100% - 20px);
+    }
+  
+    .cart aside a {
+      width: calc(100% - 20px);
+    }
+  }
+  
